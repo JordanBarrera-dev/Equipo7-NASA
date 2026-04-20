@@ -1,8 +1,7 @@
-
 const imagenDia = document.getElementById("img-dia");
-const fecha = document.getElementById("fecha");
+const fecha = document.getElementById("fecha-nasa");
 const hoy = new Date().toISOString().split("T")[0];
-let fecha_max = hoy;
+fecha.max = hoy;
 let datos = {};
 
 fecha.addEventListener("change", () => {
@@ -33,10 +32,6 @@ fecha.addEventListener("change", () => {
                 }
                 favoritos.push(datos);
                 localStorage.setItem('NASA-favoritos', JSON.stringify(favoritos));
-
             })
         })
 })
-
-
-
