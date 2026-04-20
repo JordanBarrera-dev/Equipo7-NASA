@@ -2,7 +2,7 @@
 const imagenDia = document.getElementById("img-dia");
 const fecha = document.getElementById("fecha");
 const hoy = new Date().toISOString().split("T")[0];
-fecha.max = hoy;
+let fecha_max = hoy;
 let datos = {};
 
 fecha.addEventListener("change", () => {
