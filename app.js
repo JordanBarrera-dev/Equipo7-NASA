@@ -1,4 +1,4 @@
-const url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
+const url = "https://api.nasa.gov/planetary/apod?api_key=4E6uMrqTMpeFjWcID0BUdIgt9IZLbW9zqtU8YRG8";
 const imagenDia = document.getElementById("img-dia");
 
 fetch(url)
