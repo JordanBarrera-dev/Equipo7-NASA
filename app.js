@@ -33,7 +33,7 @@ fecha.addEventListener("change", () => {
                 }
                 favoritos.push(datos);
                 localStorage.setItem('NASA-favoritos', JSON.stringify(favoritos));
-
+                alert("¡Agregado a favoritos!");
             })
         })
 })
