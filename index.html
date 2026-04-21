@@ -5,18 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NASA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="card" style="width: 18rem;" id="img-dia">
-                <img src="https://apod.nasa.gov/apod/image/2604/PanstarrsPlanetsPerrotLab1024.jpg" class="card-img-top" alt="imagen-del-dia">
-                <div class="card-body">
-                    <h5 class="card-title">PanSTARRS and Planets- 2026-04-18</h5>
-                    <p class="card-text">Near the eastern horizon before sunrise, Comet C/2025 R3 PanSTARRS is getting brighter. Readily visible in binoculars and small telescopes, the comet may be just on the verge of naked-eye visibility from dark sky sites. Though it was not quite apparent to the eye, PanSTARRS is still easy to spot in this camera image taken on April 16. In the view from a volcanic peak overlooking France's Reunion Island, planet Earth, the comet shares eastern predawn skies with naked-eye planets Mars and Mercury and fainter Neptune. Saturn is hiding behind the low cloudbank that doesn't quite hide an old crescent Moon. This is a good weekend for northern hemisphere comet watchers to try to catch PanSTARRS an hour or so before sunrise, as the comet grows brighter approaching its perihelion on April 19. On April 26 the comet makes its closest approach to our fair planet but by then will be difficult to see in the solar glare. Good views of this comet PanSTARRS in late April and early May will be from the southern hemisphere.</p>
-                    <button type="button" id="favorito" class="btn btn-primary">GUARDAR FAVORITOS</button>
-                </div>
+<body class="d-flex flex-column min-vh-100">
+  
+ <nav class="navbar navbar-dark bg-dark mb-4 custom-nav">
+  <div class="container justify-content-center">
+    <a class="navbar-brand" href="#">Nasa APOD</a>
+  </div>
+</nav>
+
+  <main class="container d-flex flex-column align-items-center flex-grow-1">
+    
+    <div class="mb-4 w-100" style="max-width: 600px;">
+      <label class="form-label text-white">Selecciona una fecha:</label>
+      <input type="date" class="form-control" id="fecha-nasa" />
     </div>
-    <input type="date" id="fecha"/>
+
+    <div class="card nasa-card" id="img-dia" style="width: 100%; max-width: 600px;">
+      </div>
+
+  </main>
+
+    <footer class="footer-nasa">
+      <div class="container">
+        <p class="footer-line">
+          <i class="fas fa-satellite-dish"></i> API proporcionada por NASA
+        </p>
+        <p class="footer-line">
+          <i class="far fa-image"></i> Astronomy Picture of the Day
+        </p>
+        <p class="footer-copy">
+          <i class="fas fa-users"></i> Equipo 7: Jordan Barrera, Jurany Rodriguez, Enith Vargas
+        </p>
+      </div>
+    </footer>
+
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
